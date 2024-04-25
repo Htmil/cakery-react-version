@@ -1,0 +1,125 @@
+{
+  "thisWeek": [
+    {
+      "productName": "Lemon Burst Cupcake",
+      "price": 3.99,
+      "imageName": "lemon_burst_cupcake.jpg"
+    },
+    {
+      "productName": "Red Velvet Indulgence Cake",
+      "price": 34.99,
+      "imageName": "red_velvet_indulgence_cake.jpg"
+    },
+    {
+      "productName": "Peanut Butter Paradise Cupcake",
+      "price": 4.99,
+      "imageName": "peanut_butter_paradise_cupcake.jpg"
+    }
+  ],
+  "cupcakes": [
+    {
+      "id": 1,
+      "productName": "Chocolate Dream Cupcake",
+      "price": 3.99,
+      "imageName": "chocolate_dream_cupcake.jpg"
+    },
+    {
+      "id": 2,
+      "productName": "Vanilla Bliss Cupcake",
+      "price": 3.49,
+      "imageName": "vanilla_bliss_cupcake.jpg"
+    },
+    {
+      "id": 3,
+      "productName": "Red Velvet Delight Cupcake",
+      "price": 4.25,
+      "imageName": "red_velvet_delight_cupcake.jpg"
+    },
+    {
+      "id": 4,
+      "productName": "Strawberry Fields Cupcake",
+      "price": 3.75,
+      "imageName": "strawberry_fields_cupcake.jpg"
+    },
+    {
+      "id": 5,
+      "productName": "Lemon Burst Cupcake",
+      "price": 3.99,
+      "imageName": "lemon_burst_cupcake.jpg"
+    },
+    {
+      "id": 6,
+      "productName": "Caramel Crunch Cupcake",
+      "price": 4.49,
+      "imageName": "caramel_crunch_cupcake.jpg"
+    },
+    {
+      "id": 7,
+      "productName": "Blueberry Blast Cupcake",
+      "price": 3.99,
+      "imageName": "blueberry_blast_cupcake.jpg"
+    },
+    {
+      "id": 8,
+      "productName": "Peanut Butter Paradise Cupcake",
+      "price": 4.99,
+      "imageName": "peanut_butter_paradise_cupcake.jpg"
+    }
+  ],
+  "cakes": [
+    {
+      "id": 1,
+      "productName": "Classic Chocolate Cake",
+      "price": 29.99,
+      "imageName": "classic_chocolate_cake.jpg"
+    },
+    {
+      "id": 2,
+      "productName": "Vanilla Celebration Cake",
+      "price": 24.99,
+      "imageName": "vanilla_celebration_cake.jpg"
+    },
+    {
+      "id": 3,
+      "productName": "Red Velvet Indulgence Cake",
+      "price": 34.99,
+      "imageName": "red_velvet_indulgence_cake.jpg"
+    },
+    {
+      "id": 4,
+      "productName": "Lemon Drizzle Delight Cake",
+      "price": 27.99,
+      "imageName": "lemon_drizzle_delight_cake.jpg"
+    },
+    {
+      "id": 5,
+      "productName": "Carrot Crush Cake",
+      "price": 32.99,
+      "imageName": "carrot_crush_cake.jpg"
+    },
+    {
+      "id": 6,
+      "productName": "Strawberry Fantasy Cake",
+      "price": 26.99,
+      "imageName": "strawberry_fantasy_cake.jpg"
+    },
+    {
+      "id": 7,
+      "productName": "Blueberry Bliss Cake",
+      "price": 29.99,
+      "imageName": "blueberry_bliss_cake.jpg"
+    },
+    {
+      "id": 8,
+      "productName": "Caramel Sensation Cake",
+      "price": 31.99,
+      "imageName": "caramel_sensation_cake.jpg"
+    },
+    {
+      "id": 9,
+      "productName": "Pineapple Paradise Cake",
+      "price": 28.99,
+      "imageName": "pineapple_paradise_cake.jpg"
+    }
+  ]
+}

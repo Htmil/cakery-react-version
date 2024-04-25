@@ -10,8 +10,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 // import Products from "./pages/Products";
-import CupCakes from "./pages/Product/CupCakes";
-import WedCakes from "./pages/Product/WedCakes";
+import CupCakes, { cupCakesLoader } from "./pages/Product/CupCakes";
+import WedCakes, { wedCakesLoader } from "./pages/Product/WedCakes";
+import { thisWeekLoader } from "./pages/Home";
 //? Layouts
 import RootLayout from "./layouts/RootLayout";
 import ProdLayout from "./layouts/ProdLayout";
@@ -21,22 +22,23 @@ import NotFound from "./pages/NotFound";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
+      <Route index element={<Home />} loader={thisWeekLoader} />
       <Route path="about" element={<About title="About Us" text="Hello" />} />
       <Route path="contact" element={<Contact />} />
-      
+
       <Route path="products" element={<ProdLayout />}>
-        <Route path="cupcakes" element={<CupCakes />} />
-        <Route path="wedcakes" element={<WedCakes />} />
+        <Route index element={<CupCakes />} loader={cupCakesLoader} />
+        <Route path="cupcakes" element={<CupCakes />} loader={cupCakesLoader} />
+        <Route path="wedcakes" element={<WedCakes />} loader={wedCakesLoader} />
       </Route>
 
-      <Route path="*" element={<NotFound />} /> 
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
 function App() {
   return <RouterProvider router={router} />;
-} 
+}
 
 export default App;
 

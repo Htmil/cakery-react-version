@@ -1,19 +1,32 @@
 import { NavLink, Outlet } from "react-router-dom";
+import React, { useEffect } from "react";
 
-export default function ProdLayout(){
+export default function ProdLayout() {
+
+    useEffect(() => {
+        // Simulate a click event on the "Cupcakes" NavLink when component mounts
+        document.getElementById("cupCakeLink").click();
+    }, []);
+
     return (
-        <div className="prodLayout">
+        <>
+            <header>
+                <div className="coverImagePages imageProd">
+                    <h1>Products</h1>
+                </div>
+            </header>
+            <main>
+                <div className="prodLayout">
+                        <h2>What cake would you like to buy?</h2>
+                    <nav className="prodButtons">
+                        <NavLink id="cupCakeLink" to="CupCakes" className="ctaButton">Cupcakes</NavLink>
+                        <NavLink to="WedCakes" className="ctaButton">Wedding cakes</NavLink>
+                    </nav>
 
-            <h2>Products</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, porro!</p>
+                    <Outlet />
 
-            <nav>
-                <NavLink to="CupCakes">Cupcakes</NavLink>
-                <NavLink to="WedCakes">Wedding cakes</NavLink>
-            </nav>
-            
-            <Outlet />
-
-        </div>
+                </div>
+            </main>
+        </>
     )
 }

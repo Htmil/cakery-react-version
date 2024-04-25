@@ -1,10 +1,24 @@
-export default function About (props){
+export default function About(props) {
     return (
-        <div className="about">
-            <h2>{props.title}</h2>
-            <p> <strong>{props.text}</strong> <br></br> elit. Corrupti vitae tempore natus, laborum ducimus tempora autem quidem, porro aliquid totam delectus eligendi itaque nisi sequi ea at quaerat qui pariatur inventore dicta sapiente laboriosam omnis? Vitae adipisci ut mollitia a, ullam et inventore reprehenderit accusamus, illum nisi odio, veritatis ex.</p>
-            <p>ng elit. Corrupti vitae tempore natus, laborum ducimus tempora autem quidem, porro aliquid totam delectus eligendi itaque nisi sequi ea at quaerat qui pariatur inventore dicta sapiente laboriosam omnis? Vitae adipisci ut mollitia a, ullam et inventore reprehenderit accusamus, illum nisi odio, veritatis ex.</p>
-            <p>Lors, laborum ducimus tempora autem quidem, porro aliquid totam delectus eligendi itaque nisi sequi ea at quaerat qui pariatur inventore dicta sapiente laboriosam omnis? Vitae adipisci ut mollitia a, ullam et inventore reprehenderit accusamus, illum nisi odio, veritatis ex.</p>            
-        </div>
+        <>
+            <header>
+                    <div className="coverImagePages imageAbout">
+                    <h1>About</h1>
+                </div>
+            </header>
+            <main>
+                <div className="pageInfoWrapper">
+                    <p>
+                        At Munamii Cakery, each cake, each box of cupcakes that we make has a
+                        very special value for us. <br /><br />
+                        We not only want to bring a dessert to your table but rather a unique
+                        experience for you, which will become an unforgettable memory.
+                        <br /><br />
+                        We have been in the pastry market for more than 8 years and now we
+                        offer you a new way to shop through our website.
+                    </p>
+                </div>
+            </main>
+        </>
     )
 }

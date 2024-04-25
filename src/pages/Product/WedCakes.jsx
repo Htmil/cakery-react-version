@@ -1,22 +1,32 @@
+import { useLoaderData} from "react-router-dom";
+
 export default function WedCakes() {
+    const wedCakes = useLoaderData();
     return (
-        <div className="cakes">
-            <h3>Wedding Cakes</h3>
-            <div className="wedcakes">
-                <p>dipisicing elit. Explicabo eius obcaecati recusandae. Vitae quibusdam iure debitis nostrum nihil cum, perspiciatis praesentium beatae facilis, optio quae voluptates nulla quis provident magnam? Quas dicta consectetur consequuntur omnis iure impedit amet nam cupiditate.</p>
-            </div>
-
-            <div className="wedcakes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius obcaecati recusandae. Vitae quibusdam iure debitis nostrum nihil cum, perspiciatis praesentium beatae facilis, optio quae voluptates nulla quis provident magnam? Quas dicta consectetur consequuntur omnis iure impedit amet nam cupiditate.</p>
-            </div>
-
-            <div className="wedcakes">
-                <p>Vitae quibusdam iure debitis nostrum nihil cum, perspiciatis praesentium beatae facilis, optio quae voluptates nulla quis provident magnam? Quas dicta consectetur consequuntur omnis iure impedit amet nam cupiditate.</p>
-            </div>
-
-            <div className="wedcakes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius obcaecati recusandae. Vitae quibusdam iure debitis nostrum nihil cum, perspiciatis praesentium beatae facilis, optio quae voluptates nulla quis provident magnam? Quas dicta consectetur consequuntur omnis iure impedit amet nam cupiditate.</p>
-            </div>
+        <div className="cakeWrapper">
+        <h2>Wedding Cakes</h2>
+        <div className="cakeGrid">
+        {wedCakes.map(wedCake => (
+						// <Link to="./products/wedCakes" key={wedCake.id}>
+							<div className="cakeCard">
+								<div className="imageContainter">
+									<div className="image" style={{backgroundImage: `url(/images/${wedCake.imageName})` }}></div>
+								</div>
+								<div className="cakeInfo">
+									<p className="productName">{wedCake.productName}</p>
+									<p className="price">{wedCake.price}</p>
+									<div className="button">Buy now</div>
+								</div>
+							</div>
+						// </Link>
+					))}
         </div>
+    </div>
     )
+}
+
+export const wedCakesLoader = async () => {
+    const res = await fetch('http://localhost:4000/cakes');
+
+    return res.json()
 }
