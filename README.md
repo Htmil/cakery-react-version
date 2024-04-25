@@ -42,11 +42,17 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Set up JSON-server to simulate a REST API.
 # Install : 
+```bash
 npm install -g json-server
+```
 # Run server:
+```bash
 json-server -p 4000 -w ./data/.db_cakes.json
+```
 # If there is a problem, run this code and try starting the server again:
+```bash
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
 
 
 
