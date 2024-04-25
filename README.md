@@ -40,10 +40,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Install JSON-server
+## Set up JSON-server to simulate a REST API.
 Install : ![json-server](https://github.com/Htmil/cakery-react-version/assets/82089360/c49380a9-1f27-4e5b-a799-b937100b500a)
 Run server: ![json-server_run](https://github.com/Htmil/cakery-react-version/assets/82089360/e7a3406d-741b-4ffd-8d9b-89561ae71f90)
-if there is a problem run this code and try starting a server again: ![json-server_bypass](https://github.com/Htmil/cakery-react-version/assets/82089360/6c05996b-938d-478d-b97f-1a5d46cc414e)
+If you encounter an issue, execute this code and attempt to start the server again: ![json-server_bypass](https://github.com/Htmil/cakery-react-version/assets/82089360/6c05996b-938d-478d-b97f-1a5d46cc414e)
 
 
 
