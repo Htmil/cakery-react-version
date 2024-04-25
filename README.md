@@ -8,6 +8,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
@@ -38,6 +39,15 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Install JSON-server
+Install : ![json-server](https://github.com/Htmil/cakery-react-version/assets/82089360/c49380a9-1f27-4e5b-a799-b937100b500a)
+Run server: ![json-server_run](https://github.com/Htmil/cakery-react-version/assets/82089360/e7a3406d-741b-4ffd-8d9b-89561ae71f90)
+if there is a problem run this code and try starting a server again: ![json-server_bypass](https://github.com/Htmil/cakery-react-version/assets/82089360/6c05996b-938d-478d-b97f-1a5d46cc414e)
+
+
+
+
 
 ## Learn More
 
