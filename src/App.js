@@ -5,18 +5,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-//? Pages
+//* Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-// import Products from "./pages/Products";
 import CupCakes, { cupCakesLoader } from "./pages/Product/CupCakes";
 import WedCakes, { wedCakesLoader } from "./pages/Product/WedCakes";
 import { thisWeekLoader } from "./pages/Home";
-//? Layouts
+
+//* Layouts
 import RootLayout from "./layouts/RootLayout";
 import ProdLayout from "./layouts/ProdLayout";
-//? ErrorPage
+
+//* ErrorPage
 import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter(
@@ -41,25 +42,3 @@ function App() {
 }
 
 export default App;
-
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <header>
-//         <nav>
-//           <h1>slip3000</h1>
-//           <NavLink to="/">Home</NavLink>
-//           <NavLink to="about">About</NavLink>
-//           <NavLink to="contact">Contact</NavLink>
-//           <NavLink to="products">Products</NavLink>
-//         </nav>
-//       </header>
-//       <main>
-//         <Routes>
-//           <Route index element={<Home />} />
-//           <Route path="about" element={<About />} />
-//         </Routes>
-//       </main>
-//     </BrowserRouter>
-//   );
-// }

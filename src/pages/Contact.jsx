@@ -24,22 +24,25 @@ export default function Contact() {
                 <div className="formContainer">
                     <form action="#">
                         <h2>Contact Form</h2>
-                        <label for="fName">First Name</label>
-                        <input type="text" id="fName" placeholder="Your name..." />
-                        <br />
-                        <label for="lName">Last Name</label>
-                        <input type="text" id="lName" placeholder="Your last name..." />
-                        <br />
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your email..." />
-                        <br />
-                        <label for="subject">Subject</label>
-                        <textarea
-                            id="subject"
-                            name="subject"
-                            placeholder="Write something.."
-                        ></textarea>
-                        <br />
+                        <label for="fName">
+                            <span>Your name: </span>
+                            <input type="text" id="fName" placeholder="Your name..." />
+                        </label>
+                        <label for="lName">
+                            <span>Your last name: </span>
+                            <input type="text" id="lName" placeholder="Your last name..." />
+                        </label>
+                        <label for="email">
+                            <span>Your email: </span>
+                            <input type="email" id="email" placeholder="Your email..." />
+                        </label>
+                        <label for="subject">
+                            <span>Your Message:</span>
+                            <textarea
+                                id="subject"
+                                name="subject"
+                                placeholder="Write something.."></textarea>
+                        </label>
                         <input type="button" id="submit" value="Submit" />
                     </form>
                 </div>

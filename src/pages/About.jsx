@@ -2,7 +2,7 @@ export default function About(props) {
     return (
         <>
             <header>
-                    <div className="coverImagePages imageAbout">
+                <div className="coverImagePages imageAbout">
                     <h1>About</h1>
                 </div>
             </header>

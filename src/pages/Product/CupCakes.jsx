@@ -6,21 +6,18 @@ export default function CupCakes() {
 	return (
 		<>
 			<div className="cupcakeWrapper">
-				<h2>Cupcakes</h2>
 				<div className="cupcakeGrid">
 					{cupcakes.map(cupcake => (
-						// <Link to="./products/cupcakes" key={cupcake.id}>
-							<div className="cakeCard">
-								<div className="imageContainter">
-									<div className="image" style={{backgroundImage: `url(/images/${cupcake.imageName})` }}></div>
-								</div>
-								<div className="cakeInfo">
-									<p className="productName">{cupcake.productName}</p>
-									<p className="price">{cupcake.price}</p>
-									<div className="button">Buy now</div>
-								</div>
+						<div className="cakeCard">
+							<div className="imageContainter">
+								<div className="image" style={{ backgroundImage: `url(/images/${cupcake.imageName})` }}></div>
 							</div>
-						// </Link>
+							<div className="cakeInfo">
+								<p className="productName">{cupcake.productName}</p>
+								<p className="price">{cupcake.price}</p>
+								<div className="button">Buy now</div>
+							</div>
+						</div>
 					))}
 				</div>
 			</div>

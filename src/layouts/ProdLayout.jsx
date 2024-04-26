@@ -17,8 +17,9 @@ export default function ProdLayout() {
             </header>
             <main>
                 <div className="prodLayout">
-                        <h2>What cake would you like to buy?</h2>
+                    <h2>Indulge in Sweet Bliss: Cupcakes and Wedding Cakes Await!</h2>
                     <nav className="prodButtons">
+                        <p>Choose a category :</p>
                         <NavLink id="cupCakeLink" to="CupCakes" className="ctaButton">Cupcakes</NavLink>
                         <NavLink to="WedCakes" className="ctaButton">Wedding cakes</NavLink>
                     </nav>
